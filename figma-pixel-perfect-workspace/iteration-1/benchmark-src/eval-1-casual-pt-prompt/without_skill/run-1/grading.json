@@ -1,0 +1,70 @@
+{
+  "summary": {
+    "pass_rate": 1.0,
+    "passed": 12,
+    "failed": 0,
+    "total": 12
+  },
+  "expectations": [
+    {
+      "text": "Hero title font-size is 48px (was 32px)",
+      "passed": true,
+      "evidence": ".hero h1 font-size: 48px"
+    },
+    {
+      "text": "Hero subtitle color uses the secondary text token (#6b7280), not hardcoded #999999",
+      "passed": true,
+      "evidence": ".hero p color: var(--color-text-secondary)"
+    },
+    {
+      "text": "Cards have a 1px border using the border token/color #e5e7eb (was missing)",
+      "passed": true,
+      "evidence": ".card border: not found; box-shadow: inset 0 0 0 1px var(--color-border)"
+    },
+    {
+      "text": "Card border-radius is 16px / --radius-card (was 4px)",
+      "passed": true,
+      "evidence": ".card border-radius: var(--radius-card)"
+    },
+    {
+      "text": "Card padding yields 32px of effective inner space (was 20px)",
+      "passed": true,
+      "evidence": ".card padding: 32px + 0px border = 32.0"
+    },
+    {
+      "text": "Price font-size is 40px (was 32px)",
+      "passed": true,
+      "evidence": ".price font-size: 40px"
+    },
+    {
+      "text": "Button border-radius is 8px / --radius-button (was 999px pill)",
+      "passed": true,
+      "evidence": ".card button border-radius: var(--radius-button)"
+    },
+    {
+      "text": "Button background uses the primary token #4f46e5 (was hardcoded #6c5ce7)",
+      "passed": true,
+      "evidence": ".card button background: var(--color-primary)"
+    },
+    {
+      "text": "Button copy is 'Get started' (was 'Buy now') on all three cards",
+      "passed": true,
+      "evidence": "'>Get started<' occurrences: 3, '>Buy now<' present: False"
+    },
+    {
+      "text": "A rendered screenshot of the page exists in outputs",
+      "passed": true,
+      "evidence": "png files in outputs: ['after.png', 'before.png', 'comparison.png', 'design_reference.png', 'final.png']"
+    },
+    {
+      "text": "No extraneous files added to the repo (no PRD/spec/asset files)",
+      "passed": true,
+      "evidence": "extra files: []"
+    },
+    {
+      "text": "report.md exists in outputs and lists the changed files",
+      "passed": true,
+      "evidence": "report.md length: 4319 chars, mentions styles.css/index.html: True"
+    }
+  ]
+}

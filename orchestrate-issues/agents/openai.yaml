@@ -1,0 +1,17 @@
+interface:
+  display_name: orchestrate issues
+  short_description: Orchestrate a backlog of GitHub issues across multiple coding
+    agents. Use when several issues may run in parallel but have direct or transitive
+    blockers, shared-file collisions, database schema changes, migrations, integration
+    gates, or ordered merges. Computes the current execution frontier, assigns safe
+    work, serializes migration finalization, and continuously recalculates what can
+    run next. Does not implement the issues itself.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

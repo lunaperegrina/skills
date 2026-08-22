@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+}
+
+.site-header {
+  height: 72px;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 64px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 32px;
+}
+
+.site-header nav a {
+  font-size: 14px;
+  color: #4b5563;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 64px 0 48px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #999999;
+  margin-top: 12px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 64px 96px;
+}
+
+.card {
+  width: 384px;
+  background: var(--color-surface);
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.card h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 16px 0 24px;
+}
+
+.price span {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+}
+
+.card ul {
+  list-style: none;
+  margin-bottom: 32px;
+}
+
+.card li {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 24px;
+}
+
+.card button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 999px;
+  background: #6c5ce7;
+  color: var(--color-on-primary);
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.site-footer {
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}

@@ -1,0 +1,19 @@
+{
+  "eval_id": 1,
+  "eval_name": "casual-pt-prompt",
+  "prompt": "nossa, a página de pricing aqui no projeto tá bem diferente do figma do time :( o design é esse aqui: https://www.figma.com/design/Q0Kt1wKVS1PW8aNs8vuCMb — a tela se chama \"Pricing\". pode deixar a página igual ao design?",
+  "assertions": [
+    "Hero title font-size is 48px (was 32px)",
+    "Hero subtitle color uses the secondary text token (#6b7280), not hardcoded #999999",
+    "Cards have a 1px border using the border token/color #e5e7eb (was missing)",
+    "Card border-radius is 16px / --radius-card (was 4px)",
+    "Card padding is 32px (was 20px)",
+    "Price font-size is 40px (was 32px)",
+    "Button border-radius is 8px / --radius-button (was 999px pill)",
+    "Button background uses the primary token #4f46e5 (was hardcoded #6c5ce7)",
+    "Button copy is 'Get started' (was 'Buy now') on all three cards",
+    "A rendered screenshot of the page exists in outputs",
+    "No extraneous files added to the repo (no PRD/spec/asset files)",
+    "report.md exists in outputs and lists the changed files"
+  ]
+}

@@ -1,0 +1,40 @@
+/* Inter — bundled locally so the page renders identically offline (file://) */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('fonts/inter-latin-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: block;
+  src: url('fonts/inter-latin-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url('fonts/inter-latin-700.woff2') format('woff2');
+}
+
+:root {
+  /* Design tokens — source of truth shared with the Figma library */
+  --color-bg: #f9fafb;
+  --color-surface: #ffffff;
+  --color-text-primary: #111827;
+  --color-text-secondary: #6b7280;
+  --color-text-soft: #4b5563;
+  --color-text-muted: #9ca3af;
+  --color-border: #e5e7eb;
+  --color-primary: #4f46e5;
+  --color-on-primary: #ffffff;
+
+  --radius-card: 16px;
+  --radius-button: 8px;
+
+  --font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+}

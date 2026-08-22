@@ -127,7 +127,9 @@ For each assignment output:
 
 Default branch convention:
 
-`codex/issue-<number>-<slug>`
+`issue/<number>-<slug>`
+
+Do not encode the implementing agent (codex, claude, etc.) in the branch name; the orchestrator is agent-agnostic.
 
 Immediately mark/claim the issue as `In Progress` when tracker mutation is available.
 
